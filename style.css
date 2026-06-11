@@ -11,7 +11,7 @@
 
 body {
     height: 100%;
-    background: linear-gradient(to right, #fc5185 50%, #00adb5 50%) fixed;
+    background: linear-gradient(to right, #000000 50%, #ffffff 50%) fixed;
 }
 
 .container {
@@ -24,9 +24,14 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 20px;
     perspective: 300px;
-    box-shadow: 15px 30px 35px rgba (0, 0, 0, 0.3);
     padding-left: 50px;
     padding-right: 50px;
+
+}
+
+.container:hover {
+    box-shadow: inset 10px 10px 10px #5d5b5b;
+    transition: 0.5s all;
 }
 
 .stats {
@@ -49,9 +54,10 @@ body {
 
 #yazı {
     transform: rotateX(180deg);
-   
+
 }
-#yazı img{
+
+#yazı img {
     width: 145px;
     backface-visibility: hidden;
 }
@@ -80,21 +86,23 @@ body {
 button {
     width: 120px;
     padding: 10px 0px;
-    border: 3px solid #fc5185;
+    border: 3px solid #ffffff;
     border-radius: 5px;
     cursor: pointer;
 }
 
 #flip-button {
-    background-color: #fc5185;
+    background-color: #000000;
     color: white;
     font-size: 18px;
+    border-radius: 20px;
 }
 
 #reset-button {
 
     color: black;
     font-size: 18px;
+    border-radius: 20px;
 }
 
 #flip-button:disabled {
